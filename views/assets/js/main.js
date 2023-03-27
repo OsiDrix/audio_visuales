@@ -24,4 +24,14 @@
 	//Activate bootstrip tooltips
 	$("[data-toggle='tooltip']").tooltip();
 
+
+	// function pageLoader(container, page) {
+    //   $("."+container).load(page);
+    // }
+
+	// function cambiarContenidoDiv(id, nuevoContenido) {
+	// 	var div = document.getElementById(id);
+	// 	div.innerHTML = nuevoContenido;
+	//   }
+
 })();

@@ -20,7 +20,7 @@
     <!-- CSS STYLES -->
     <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     <link rel="stylesheet" type="text/css" href="../views/assets/dist/css/main.css">
-    <link rel="stylesheet" href="../views/assets/dist/css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="../views/assets/dist/css/sweetalert2.min.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
@@ -49,14 +49,12 @@
     echo '</main>';
 
 ?>
-
-    
-    
+ 
     <!-- Essential javascripts for application to work-->
-    <script src="../views/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="../views/assets/js/popper.min.js"></script>
-    <script src="../views/assets/js/bootstrap.min.js"></script>
-    <script src="../views/assets/js/main.js"></script>
+    <script type="text/javascript" src="../views/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../views/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="../views/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../views/assets/js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="../views/assets/js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
@@ -79,10 +77,49 @@
     </script>
     <script type="text/javascript">
 
-      function pageLoader(container, page) {
-        $("."+container).load(page);
-      }
+    function pageLoader(container, page) {
+            $("."+container).load(page);
+    }
+
+      // function cambiarContenidoDiv(id, nuevoContenido) {
+	    //         var div = document.getElementById(id);
+      //         div.innerHTML = nuevoContenido;
+      // }
       
+//   function pageLoader(container, page) {
+//   $.ajax({
+//     url: page,
+//     type: 'GET',
+//     dataType: 'html',
+//     success: function(data) {
+//       $('.' + container).html(data);
+//     },
+//     error: function(jqXHR, textStatus, errorThrown) {
+//       console.log('Error loading page: ' + textStatus + ' - ' + errorThrown);
+//     }
+//   });
+// }
+
+$(document).ready(function () {
+//     $('#sampleTable').DataTable({
+//         processing: true,
+//         serverSide: true,
+//         ajax: '../ajax/reservaciones.ajax.php',
+//     });
+// });
+
+
+      var table = $("#sampleTable").DataTable({
+                  "ajax":{
+                  "url":"../ajax/reservaciones.ajax.php",
+                  "type":"POST",
+                  "dataSrc":""
+                }
+              });
+  });
+
+
+
     </script>
   </body>
 </html>

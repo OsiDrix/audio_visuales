@@ -7,7 +7,7 @@
     class modeloReservaciones
     {
         static public function mdlMostrarReservaciones(){
-            $stmt = Conexion::conectar()->prepare("SELECT * FROM audiovisuales.view_reservation_full_data");
+            $stmt = Conexion::conectar()->prepare("SELECT userName, userEmail , userPhone , userCode, userClassroom, fromDate, toDate, productName,assistantId,productName,productType  FROM audiovisuales.view_reservation_full_data");
             $stmt  ->execute();
 
             return $stmt->fetchAll();
