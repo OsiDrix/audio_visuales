@@ -63,18 +63,28 @@
                     </tr>
                   </thead>
                   <tbody>
-                  <tr>
-                      <th>Usuario</th>
-                      <th>Email</th>
-                      <th>Teléfono</th>
-                      <th>Inicio</th>
-                      <th>Final</th>
-                      <th>Aula</th>
-                      <th>Curso</th>
-                      <th>Asistente</th>
-                      <th>Estatus</th>
-                      <th>Acciones</th>
-                    </tr>
+                  <?php 
+                      include "../models/conexion.php";
+                        $sql = Conexion::conectar()->prepare("SELECT userName, userEmail , userPhone , userCode, userClassroom, fromDate, toDate, productName,productType,assistantId  FROM audiovisuales.view_reservation_full_data");
+                        $sql->execute();
+                        while ($datos = $sql->fetch(PDO::FETCH_ASSOC)){?>
+
+                       
+                            <tr>
+                              <th><?php $datos['userName']; ?></th>
+                              <th><?php $datos['userEmail']; ?></th>
+                              <th><?php $datos['userPhone']; ?></th>
+                              <th><?php $datos['userCode']; ?></th>
+                              <th><?php $datos['userClassroom']; ?></th>
+                              <th><?php $datos['fromDate']; ?></th>
+                              <th><?php $datos['toDate']; ?></th>
+                              <th><?php $datos['productName']; ?></th>
+                              <th><?php $datos['productType']; ?></th>
+                              <th><?php $datos['assistantId']; ?></th>
+                            </tr>
+             
+                  <?php    } ?>
+
                   </tbody>
                 </table>
               </div>

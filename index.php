@@ -12,6 +12,7 @@
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="./views/assets/dist/css/line.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
 
     <!--<title>Responsive Regisration Form </title>--> 
 </head>
@@ -81,56 +82,42 @@
 
               <div class="col-lg-4 offset-lg-1">
                 <form>
+                <label class="form-control-label" for="inputSuccess1">Fecha</label>
                 <div class="input-group date" data-provide="datepicker">
                     <input type="text" class="form-control">
                     <div class="input-group-addon">
                     <span class="glyphicon glyphicon-th"></span>
                     </div>
                 </div>
-                  <div class="form-group">
+                <div class="form-group">
                     <fieldset>
-                      <label class="control-label" for="readOnlyInput">Nombre</label>
+                      <label class="control-label" for="readOnlyInput">Matricula / Código</label>
                       <input class="form-control" id="readOnlyInput" type="text" readonly="">
                     </fieldset>
                   </div>
-                  <div class="form-group has-success">
-                    <label class="form-control-label" for="inputSuccess1">Valid input</label>
-                    <input class="form-control is-valid" id="inputValid" type="text">
-                    <div class="form-control-feedback">Success! You've done it.</div>
-                  </div>
-                  <div class="form-group has-danger">
-                    <label class="form-control-label" for="inputDanger1">Invalid input</label>
-                    <input class="form-control is-invalid" id="inputInvalid" type="text">
-                    <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-                  </div>
                   <div class="form-group">
-                    <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
-                    <input class="form-control form-control-lg" id="inputLarge" type="text">
+                    <fieldset>
+                      <label class="control-label" for="readOnlyInput">Aula</label>
+                      <input class="form-control" id="readOnlyInput" type="text" readonly="">
+                    </fieldset>
                   </div>
+
                   <div class="form-group">
-                    <label class="col-form-label" for="inputDefault">Default input</label>
-                    <input class="form-control" id="inputDefault" type="text">
+                    <label for="exampleInputEmail1">Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="(000)-000-0000">
                   </div>
-                  <div class="form-group">
-                    <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
-                    <input class="form-control form-control-sm" id="inputSmall" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">Input addons</label>
-                    <div class="form-group">
-                      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-                        <input class="form-control" id="exampleInputAmount" type="text" placeholder="Amount">
-                        <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                      </div>
-                    </div>
-                  </div>
+
                 </form>
               </div>
             </div>
+            <div class="form-check form-check-inline">
+                    <label class="form-check-label ">
+                      <input class="form-check-input" type="checkbox">He revidado la informacion para enviar
+                    </label>
+                  </div>
             <div class="tile-footer">
-              <button class="btn btn-primary" type="submit">Submit</button>
+
+              <button class="btn btn-primary btn-md btn-block" type="submit" >Enviar</button>
             </div>
           </div>
         </div>
@@ -169,6 +156,7 @@
         language: "es",
         startDate: "0"
     });
+
     </script>
   </body>
 </html>

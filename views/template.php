@@ -82,14 +82,14 @@
 
 $(document).ready(function () {
 
-  $('#reservationTable').DataTable({
-               processing: true,
-               serverSide: true,
-               ajax: '../ajax/reservaciones.ajax.php',
+//   $('#reservationTable').DataTable({
+//                processing: true,
+//                serverSide: true,
+//                ajax: './ajax/reservaciones.ajax.php',
 
-    });
+//     });
 
-});
+// });
 
 
       // var table = $("#reservationTable").DataTable({

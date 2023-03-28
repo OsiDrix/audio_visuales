@@ -16,6 +16,6 @@
         }
     }
 
-    $reservaciones = modeloReservaciones::mdlMostrarReservaciones();
-    print_r($reservaciones);
+    //$reservaciones = modeloReservaciones::mdlMostrarReservaciones();
+    //print_r($reservaciones);
 ?>
