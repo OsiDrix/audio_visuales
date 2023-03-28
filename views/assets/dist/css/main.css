@@ -15311,6 +15311,12 @@ be a descendant of the grid when it is being dragged.
   color: #fff;
 }
 
+.reservaciones{
+  font-size: 17px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+
+}
 .treeview-item.active, .treeview-item:hover, .treeview-item:focus {
   background: #0d1214;
   text-decoration: none;
@@ -15584,6 +15590,7 @@ be a descendant of the grid when it is being dragged.
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 1.5rem;
+  text-decoration-color: var(--green);
 }
 
 .tile .tile-title-w-btn {
@@ -16390,11 +16397,12 @@ be a descendant of the grid when it is being dragged.
 .login-content .logo h1 {
   font-size: 52px;
   font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-content .login-box {
   position: relative;
-  min-width: 350px;
+  min-width: 450px;
   min-height: 390px;
   background-color: #fff;
   -webkit-box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);

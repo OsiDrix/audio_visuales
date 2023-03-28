@@ -63,7 +63,7 @@
     <script type="text/javascript" src="../views/assets/js/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../views/assets/js/plugins/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="../views/assets/js/plugins/sweetalert2.all.min.js"></script>
-    <script type="text/javascript">$('#sampleTable').DataTable();</script>
+    <script type="text/javascript">$('#reservationTable').DataTable();</script>
     <!-- Google analytics script-->
     <script type="text/javascript">
       if(document.location.hostname == 'pratikborsadiya.in') {
@@ -77,46 +77,26 @@
     </script>
     <script type="text/javascript">
 
-    function pageLoader(container, page) {
-            $("."+container).load(page);
-    }
-
-      // function cambiarContenidoDiv(id, nuevoContenido) {
-	    //         var div = document.getElementById(id);
-      //         div.innerHTML = nuevoContenido;
-      // }
-      
-//   function pageLoader(container, page) {
-//   $.ajax({
-//     url: page,
-//     type: 'GET',
-//     dataType: 'html',
-//     success: function(data) {
-//       $('.' + container).html(data);
-//     },
-//     error: function(jqXHR, textStatus, errorThrown) {
-//       console.log('Error loading page: ' + textStatus + ' - ' + errorThrown);
-//     }
-//   });
-// }
-
 $(document).ready(function () {
-//     $('#sampleTable').DataTable({
-//         processing: true,
-//         serverSide: true,
-//         ajax: '../ajax/reservaciones.ajax.php',
-//     });
-// });
+
+  $('#reservationTable').DataTable({
+               processing: true,
+               serverSide: true,
+               ajax: '../ajax/reservaciones.ajax.php',
+
+    });
+
+});
 
 
-      var table = $("#sampleTable").DataTable({
-                  "ajax":{
-                  "url":"../ajax/reservaciones.ajax.php",
-                  "type":"POST",
-                  "dataSrc":""
-                }
-              });
-  });
+      // var table = $("#reservationTable").DataTable({
+      //             "ajax":{
+      //             "url":"../ajax/reservaciones.ajax.php",
+      //             "type":"POST",
+      //             "dataSrc":""
+      //           }
+      //         });
+      // });
 
 
 

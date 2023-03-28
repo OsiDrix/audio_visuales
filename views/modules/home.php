@@ -47,7 +47,7 @@
           <div class="tile">
             <div class="tile-body">
               <div class="table-responsive">
-                <table class="table table-hover table-bordered" id="sampleTable">
+                <table class="table table-hover table-bordered" id="reservationTable">
                   <thead>
                     <tr>
                       <th>Usuario</th>
