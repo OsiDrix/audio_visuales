@@ -57,12 +57,15 @@
     <script type="text/javascript" src="../views/assets/js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="../views/assets/js/plugins/pace.min.js"></script>
-    <!-- Page specific javascripts-->
-    <!-- Page specific javascripts-->
     <!-- Data table plugin-->
     <script type="text/javascript" src="../views/assets/js/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../views/assets/js/plugins/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="../views/assets/js/plugins/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="../views/assets/js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="../views/assets/js/plugins/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="../views/assets/js/plugins/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="../views/assets/js/plugins/bootstrap-datepicker.min.js"></script>
+
     <script type="text/javascript">$('#reservationTable').DataTable();</script>
     <!-- Google analytics script-->
     <script type="text/javascript">

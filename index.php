@@ -16,7 +16,7 @@
     <!--<title>Responsive Regisration Form </title>--> 
 </head>
 <body>
-    <div class="container container-xl">
+    <div class="container">
       <img src="./views/assets/dist/images/logo.png" alt="logo UTESA" srcset="">
         <header>Formulario de Servicios Audiovisuales (UTESA)</header>
 
@@ -81,15 +81,16 @@
 
               <div class="col-lg-4 offset-lg-1">
                 <form>
-                  <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
-                    <input placeholder="Select date" type="text" id="example" class="form-control">
-                        <label for="example">Try me...</label>
-                    <i class="fas fa-calendar input-prefix"></i>
-                  </div>
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control">
+                    <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
                   <div class="form-group">
                     <fieldset>
-                      <label class="control-label" for="readOnlyInput">Readonly input</label>
-                      <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly="">
+                      <label class="control-label" for="readOnlyInput">Nombre</label>
+                      <input class="form-control" id="readOnlyInput" type="text" readonly="">
                     </fieldset>
                   </div>
                   <div class="form-group has-success">
@@ -147,6 +148,13 @@
     <script src="./views/assets/js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="./views/assets/js/plugins/pace.min.js"></script>
+
+    <script type="text/javascript" src="./views/assets/js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="./views/assets/js/plugins/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="./views/assets/js/plugins/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="./views/assets/js/plugins/bootstrap-datepicker.min.js"></script>
+
+
     <script type="text/javascript">
       // Login Page Flipbox control
       $('.login-content [data-toggle="flip"]').click(function() {
@@ -154,9 +162,13 @@
       	return false;
       });
 
+ 
       $('.datepicker').datepicker({
-        inline: true
-      });
+        format: 'dd/mm/yyyy',
+        autoclose: true,
+        language: "es",
+        startDate: "0"
+    });
     </script>
   </body>
 </html>
